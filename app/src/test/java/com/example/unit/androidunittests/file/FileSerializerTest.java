@@ -1,6 +1,5 @@
 package com.example.unit.androidunittests.file;
 
-import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import com.example.unit.androidunittests.Item;
@@ -8,22 +7,21 @@ import com.example.unit.androidunittests.Item;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.junit.runner.RunWith;
 
 import java.io.File;
 
 import static org.junit.Assert.assertEquals;
 
 /**
- * Tests that the saves an object to a file.
+ * Non-instrumented test that serializes an object to a file.
  */
-@RunWith(AndroidJUnit4.class)
 @SmallTest
 public class FileSerializerTest {
 
     /**
      * This folder is created in the setup and deleted in the tear down method (implicitly by this rule)
-     * In Android, it uses the context.getCacheDir() directory
+     * In Android, it uses the context.getCacheDir() directory. This is a trick where we can run this
+     * test as a JVM test because we get hold of the cache dir without using an Android Context.
      */
     @Rule
     public TemporaryFolder folder = new TemporaryFolder();
