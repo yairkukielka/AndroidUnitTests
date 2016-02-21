@@ -3,22 +3,19 @@ package com.example.unit.androidunittests.prefs;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertEquals;
 
 /**
- * Tests that the saves an object to a file.
+ * Tests that modify the shared preferences.
  */
-@RunWith(AndroidJUnit4.class)
 @SmallTest
-public class PreferencesTest {
+public class SharedPreferencesTest {
     private static final String PREFS_NAME = "prefs";
     private static final String KEY_PREF = "KEY_PREF";
     private SharedPreferences sharedPreferences;
