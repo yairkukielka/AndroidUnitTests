@@ -16,6 +16,7 @@ android {
 
 dependencies {
     // dependencies for instrumented tests
+    androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test:runner:0.4'
 
     //dependencies for non-instrumented unit tests
