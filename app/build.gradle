@@ -12,6 +12,12 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    // If you want to use files from src/test/myfiles in your non-instrumented tests you'll have to uncomment next line
+    sourceSets.test.resources.srcDirs += ["src/test/myfiles"]
+
+    // If you want to use files from src/main in your non-instrumented tests you'll have to add this.
+    // In this case, files from the src/test folder will overwrite the ones on src/main if they have the same path&name
+    sourceSets.test.resources.srcDirs += ["src/main"]
 }
 
 dependencies {

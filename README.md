@@ -1,14 +1,17 @@
 # AndroidUnitTests
 
-Simple, instrumented and non instrumented Android unit tests.
+Android unit tests explained: instrumented and non instrumented unit tests. See blog posts for more info:
 
-See [blog post](https://medium.com/@yair.kukielka/219b04dc55b5) for more info.
 
-***
+The first post [blog post](https://medium.com/@yair.kukielka/android-unit-tests-explained-219b04dc55b5) covers:
 
-1. *JsonParserTest*: you'll find it in the 'androidTest' (instrumented) and 'test' (local, non instrumented unit test) folders.
-2. *FileSerializerTest*: non-instrumented test that uses file operations without a context
-3. *SharedPreferencesTest*: instrumented test that uses and Android context to work with shared preferences
+*  *JsonParserTest*: you'll find it in the 'androidTest' (instrumented) and 'test' (local, non instrumented unit test) folders.
+*  *FileSerializerTest*: non-instrumented test that uses file operations without a context
+*  *SharedPreferencesTest*: instrumented test that uses and Android context to work with shared preferences
+
+The second post [blog post](https://medium.com/@yair.kukielka/android-unit-tests-explained-part-2-a0f1e1413569) covers:
+
+*  *AssetTest*: you'll find it in the 'androidTest' (instrumented) and 'test' (local, non instrumented unit test) folders.
 
 ***
 
