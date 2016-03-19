@@ -13,7 +13,7 @@ The second post [blog post](https://medium.com/@yair.kukielka/android-unit-tests
 
 *  *AssetTest*: you'll find it in the 'androidTest' (instrumented) and 'test' (local, non instrumented unit test) folders.
 
-***
+
 
 #### To run the instrumented tests use:
 `./gradlew connectedCheck`
@@ -21,8 +21,8 @@ The second post [blog post](https://medium.com/@yair.kukielka/android-unit-tests
 #### For the local or non-instrumented tests:
 `./gradlew test`
 
-License (Public domain)
-=======
+
+###License (Public domain)
 
     This is free and unencumbered software released into the public domain. 
     For more information, please refer to <http://unlicense.org/>
