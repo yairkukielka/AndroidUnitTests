@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  * Unit test for a json parser. It uses org.json classes downloaded by gradle (see build.gradle)
  */
 @SmallTest
-public class JsonParserTest {
+public class JsonParserUnitTest {
 
     @Test
     public void serialize_deserialize() throws Exception {

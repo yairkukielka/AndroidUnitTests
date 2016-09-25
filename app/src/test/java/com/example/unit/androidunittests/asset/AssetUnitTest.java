@@ -16,7 +16,7 @@ import static org.junit.Assert.assertThat;
  * Non-instrumented test that reads a local text file.
  */
 @SmallTest
-public class AssetTest {
+public class AssetUnitTest {
 
     /**
      * This test will read the content of the src/test/resources/myasset.txt file if it exists.
